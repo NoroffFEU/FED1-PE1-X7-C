@@ -1,3 +1,3 @@
-document.getElementById("registerButton").addEventListener("click", function() {
+document.getElementById("registerToIndex").addEventListener("click", function() {
     window.location.href = "../index.html";
 });
