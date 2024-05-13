@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/js/constant.mjs" defer></script>
+    <script type="module" src="../js/constant.mjs"></script>
+    <script src="/js/register.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,6 +19,18 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="registerForm">
+            <form id="RegisterTask">
+                <input type="text" name="name" required pattern="^[\w]+$" title="User Only Allowed">
+                <input type="text" name="email" required pattern="^[\w\-.]+@(stud\.)?noroff\.no$" title="Noroff Email Only Allowed">
+                <input type="text" name="password" required minlength="2" title="Required at least 2 letters">
+                <button id="registerToIndex">Register</button>
+            </form>
+        </div>
+
+        
+    </main>
     
 </body>
 </html>
