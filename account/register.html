@@ -7,6 +7,13 @@
     <script type="module" src="../js/constant.mjs"></script>
     <script type="module" src="../js/register.js"></script>
 </head>
+<style>
+    body {
+        background-color: black;
+        text-align: center;
+        color: white;
+    }
+</style>
 <body>
     <header>
         <h1>Register</h1>
@@ -21,10 +28,15 @@
     </header>
     <main>
         <div class="registerForm">
+            
             <form id="RegisterTask">
+
                 <input type="text" name="name" required pattern="^[\w]+$" title="User Only Allowed">
+
                 <input type="text" name="email" required pattern="^[\w\-.]+@(stud\.)?noroff\.no$" title="Noroff Email Only Allowed">
+
                 <input type="text" name="password" required minlength="2" title="Required at least 2 letters">
+
                 <button id="registerToIndex">Register</button>
             </form>
         </div>
