@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="module" src="../js/constant.mjs"></script>
-    <script type="module" src="../js/register.js"></script>
+    <script type="module" src="../js/register.mjs"></script>
 </head>
 <style>
     body {
-        background-color: black;
+        background-color: rgb(26, 49, 72);
         text-align: center;
         color: white;
     }
@@ -28,16 +28,28 @@
     </header>
     <main>
         <div class="registerForm">
-            
-            <form id="RegisterTask">
+            <form id="registerTask">
+                <div class="registerForm">
+                    <label for="">Name</label>
+                    <input type="text" name="name" required pattern="^[\w]+$" title="User Only Allowed">
+                </div>
 
-                <input type="text" name="name" required pattern="^[\w]+$" title="User Only Allowed">
+                <div class="registerForm">
+                    <label for="">Email</label>
+                    <input type="text" name="email" required pattern="^[\w\-.]+@(stud\.)?noroff\.no$" title="Noroff Email Only Allowed">
+                </div>
 
-                <input type="text" name="email" required pattern="^[\w\-.]+@(stud\.)?noroff\.no$" title="Noroff Email Only Allowed">
+                <div class="registerForm">
+                    <label for="">Password</label>
+                    <input type="text" name="password" required minlength="2" title="Required at least 2 letters">
+                </div>
 
-                <input type="text" name="password" required minlength="2" title="Required at least 2 letters">
+                <div class="registerForm">
+                    <label for="">Name</label>
+                    
+                </div>
 
-                <button id="registerToIndex">Register</button>
+                <button class="registerButton">Register</button>
             </form>
         </div>
 
