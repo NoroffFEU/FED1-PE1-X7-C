@@ -1,16 +1,6 @@
-// const API_BASE_URL = ' https://v2.api.noroff.dev/blog/posts/maxswag ';
+const API_BASE_URL = 'https://v2.api.noroff.dev';
 
-//   fetch(API_BASE_URL)
-//   .then(response => {
-//     if (response.ok) {
-//         return response.json();
-//     } else {
-//         throw new Error("Can't connect to JSON")
-//     }
-//   })
-//   .then (data => {
-//     console.log(data);
-//   }) 
-//   .catch(error => {
-//     console.log(error);
-//   });
+export const API_USER_URL = `${API_BASE_URL}/blog/posts/maxswag`;
+export const API_LOGIN_URL = `${API_BASE_URL}/auth/login`;
+export const API_REGISTER_URL = `${API_BASE_URL}/auth/register`;
+
