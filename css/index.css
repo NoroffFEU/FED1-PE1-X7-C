@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+}
+
+.carousel-item {
+    min-width: 300px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.button {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.thumbnail {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.thumbnail img {
+    max-width: 100%;
+    height: auto;
+}

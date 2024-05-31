@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post Home</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script type="module" src="./js/constant.mjs"></script>
+    <script type="module" src="./js/blogPost.mjs"></script>
+    <style>
+        
+    </style>
 </head>
 <body>
     <header>
@@ -19,13 +24,74 @@
         </nav>
     </header>
 
-    <div class="slider">
-        <div class="slides">
-            <img src="" alt="" class="slide">
+    <div class="carousel-container">
+        <button id="prev" class="button">❮</button>
+        <div class="carousel">
+            <div class="carousel-item" data-id="13">
+                <img src="./images/image (32)-min.jpg" alt="Post 1 Image">
+                Post 1
+            </div>
+            <div class="carousel-item" data-id="14">
+                <img src="./images/image (31)-min.jpg" alt="Post 2 Image">
+                Post 2
+            </div>
+            <div class="carousel-item" data-id="15">
+                <img src="./images/image (30)-min.jpg" alt="Post 3 Image">
+                Post 3
+            </div>
+        </div>
+        <button id="next" class="button">❯</button>
+    </div>
+    
+    <div class="thumbnails">
+        <div class="thumbnail" data-id="1">
+            <img src="./images/image (29)-min.jpg" alt="Thumbnail 1">
+            <div>Thumbnail 1</div>
+        </div>
+        <div class="thumbnail" data-id="2">
+            <img src="./images/image (14)-min.jpg" alt="Thumbnail 2">
+            <div>Thumbnail 2</div>
+        </div>
+        <div class="thumbnail" data-id="3">
+            <img src="./images/image (15)-min.jpg" alt="Thumbnail 3">
+            <div>Thumbnail 3</div>
+        </div>
+        <div class="thumbnail" data-id="4">
+            <img src="./images/image (20)-min.jpg" alt="Thumbnail 4">
+            <div>Thumbnail 4</div>
+        </div>
+        <div class="thumbnail" data-id="5">
+            <img src="./images/image (21)-min.jpg" alt="Thumbnail 5">
+            <div>Thumbnail 5</div>
+        </div>
+        <div class="thumbnail" data-id="6">
+            <img src="./images/image (22)-min.jpg" alt="Thumbnail 6">
+            <div>Thumbnail 6</div>
+        </div>
+        <div class="thumbnail" data-id="7">
+            <img src="./images/image (23)-min.jpg" alt="Thumbnail 7">
+            <div>Thumbnail 7</div>
+        </div>
+        <div class="thumbnail" data-id="8">
+            <img src="./images/image (24)-min.jpg" alt="Thumbnail 8">
+            <div>Thumbnail 8</div>
+        </div>
+        <div class="thumbnail" data-id="9">
+            <img src="./images/image (25)-min.jpg" alt="Thumbnail 9">
+            <div>Thumbnail 9</div>
+        </div>
+        <div class="thumbnail" data-id="10">
+            <img src="./images/image (26)-min.jpg" alt="Thumbnail 10">
+            <div>Thumbnail 10</div>
+        </div>
+        <div class="thumbnail" data-id="11">
+            <img src="./images/image (27)-min.jpg" alt="Thumbnail 11">
+            <div>Thumbnail 11</div>
+        </div>
+        <div class="thumbnail" data-id="12">
+            <img src="./images/image (28)-min.jpg" alt="Thumbnail 12">
+            <div>Thumbnail 12</div>
         </div>
     </div>
-
-
-
-</body>
+    </body>
 </html>

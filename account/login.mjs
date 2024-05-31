@@ -26,5 +26,8 @@ async function loginUser(name, email, password) {
         console.error('Login failed:', response.errors);
     } else {
         console.log('Login successful:', response);
+
+        localStorage.setItem('userData', JSON.stringify(response));
+
     }
 }
